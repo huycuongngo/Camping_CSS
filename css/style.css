@@ -1,0 +1,280 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.item__clear {
+  clear: both;
+}
+
+/* variables */
+:root {
+  --bg-color: #F8E1DB;
+}
+
+/* start header */
+.header {
+  background-color: var(--bg-color);
+  padding: 10px 50px 10px 50px;
+}
+
+.header__logo img {
+  
+  /* tại sao nó tràng ra khỏi thằng cha nếu block*/
+  /* còn với inline-block or inline thì k bị */
+  display: inline-block;
+  margin: 10px;
+}
+
+.nav__item {
+  list-style: none;
+  display: inline-block;
+  /* border: 1px solid black; */
+  padding: 5px;
+  margin: 10px;
+}
+
+.nav__item a{
+  text-decoration: none;
+}
+
+/* responsive header */
+@media  screen and (max-width: 1000px) {
+  .header {
+    background-color: blue;
+  }
+}
+/* end header */
+
+
+/* start carousel */
+.carousel {
+  background-image: url(../img/BG.png);
+  height: 600px;
+  background-position: 0% 40%;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+/* end carousel */
+
+
+/* start activities*/
+.activities {
+  background-image: linear-gradient(#FBF4F1, #FAF5F2 );
+  padding: 50px 0;
+}
+
+.activities__header {
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.activities__content {
+  padding: 0 20px;
+}
+
+.activities__item {
+  width: 25%;
+  height: 100%;
+  padding: 10px;
+  text-align: center;
+  border: 1px solid transparent;
+  border-radius: 20px;
+
+  float: left;
+}
+
+.activities__card {
+  background-color: #fff;
+  padding: 20px;
+  border: 1px solid transparent;
+  border-radius: 20px;
+}
+
+.item__clear {
+  clear: both;
+}
+
+.activities__img {
+  position: relative;
+}
+
+.activities__img img {
+  width: 100%;
+  border: 1px solid transparent;
+  border-radius: 20px;
+}
+
+.activities__icons {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  color: #E56E52;
+  padding: 10px;
+  border: 1px solid transparent;
+  border-radius: 10px;
+  background-color: #fff;
+  opacity: 0.7;
+}
+
+.activities__card h3 {
+  margin: 10px 0;
+}
+
+.activities__card p {
+  margin: 10px 0;
+  color: #b9b8b8e7;
+}
+
+.activities__card button {
+  border: 1px solid transparent;
+  border-radius: 20px;
+  padding: 5px 30px;
+  background-color: #E8E8E8;
+}
+
+.activities__footer {
+  text-align: center;
+  margin: 20px 0;
+}
+
+.activities__footer button {
+  padding: 8px 50px;
+  border: 1px solid #D6775F;
+  border-radius: 20px;
+  color: #D6775F;
+  background-color: transparent;
+}
+
+
+
+/* end activities */
+
+
+/* start contact */
+.contact {
+  background-color: #F8E1DB;
+  margin-bottom: 100px;
+  border: 2px solid transparent;
+  border-radius: 20px;  
+  overflow: hidden;
+}
+
+.contact__left {
+  width: 50%;
+  height: 100%;
+  background-image: url(../img/mask.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 20% 0;
+
+}
+
+.contact__left img {
+  margin-left: 6rem;
+
+}
+
+.contact__right {
+  width: 50%;
+  padding-top: 50px;
+  padding-left: 50px;
+}
+.contact__right p {
+  margin: 15px 0;
+}
+
+.contact__right__footer {
+
+}
+
+.app {
+  float: left;
+  width: 50%;
+}
+
+.app img {
+  display: inline-block;
+  margin-top: 20px;
+  margin-left: 5px;
+}
+
+.media {
+  float: left;
+  width: 50%;
+  padding-left: 50px;
+}
+
+.media i {
+  color: orange;
+  display: inline-block;
+  margin: 20px 0 0 5px;
+}
+
+.float--item {
+  float: left;
+}
+
+
+
+
+/* end contact */
+
+
+/* start footer */
+footer {
+  background-color: #F8E1DB;
+  border: 1px solid transparent;
+  border-radius: 50px 50px 0 0;
+  padding: 50px 0;
+}
+
+.footer__left {
+  width: 30%;
+  margin-left: 20px;
+}
+
+.footer__right {
+  width: 60%;
+  margin-left: 40px;
+}
+
+.footer__right_first,
+.footer__right_second,
+.footer__right_third {
+  width: 30%;
+}
+
+.footer__right_first li,
+.footer__right_second li,
+.footer__right_third li {
+  list-style: none;
+  margin-top: 5px;
+}
+
+.footer__left h3,
+.footer__right_first h3,
+.footer__right_second h3,
+.footer__right_third h3 {
+  margin-bottom: 10px;
+}
+
+.footer__bottom {
+  width: 90%;
+  text-align: center;
+  margin: 0 auto;
+  margin-top: 40px;
+  /* background-color: red; */
+}
+
+/* end footer */
+
+/* hỏi chị mentor làm sao để điều chỉnh margin 0 auto */
+
+
+
+
+
+
+
